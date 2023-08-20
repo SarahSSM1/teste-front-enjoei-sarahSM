@@ -38,7 +38,7 @@
  import Header from "../components/cabecalho.vue";
  import Input from "../components/Input.vue";
  import Main from "../components/main.vue";
- import ProductCard from "../components/ProductCard.vue";
+ import ProductCard from "../components/product-card.vue";
  import rigth from "../assets/arrow-right-icon.svg";
  import left from "../assets/arrow-left-icon.svg";
 
@@ -70,11 +70,11 @@ export default {
     },
   },
   methods: {
-    proximo() {
-      this.page = this.pagination.next_page;
-    },
     anterior() {
       this.page = this.pagination.prev_page;
+    },
+    proximo() {
+      this.page = this.pagination.next_page;
     },
     async created(page, item) {
      const response = await axios.get(

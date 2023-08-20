@@ -1,9 +1,6 @@
 <template>
-  <div :class="[
-    'c-container',
-    { '-with-gutter': gutter }
-  ]">
-    <slot />
+  <div :class="['c-container', { '-with-gutter': gutter }]">
+    <slot/>
   </div>
 </template>
 

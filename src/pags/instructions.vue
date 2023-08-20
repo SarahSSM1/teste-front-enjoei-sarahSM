@@ -32,11 +32,11 @@
         já nomeado por complexidade: (1) carregamento e ]listagem dos produtos,
         (2) paginação dos resultados e (3) um campo de busca para filtrar por
         texto. você também pode
-        <a
-          href="https://www.figma.com/file/9PC03YiIAtag7VzBPSQG9w/search?type=design&node-id=0%3A1&mode=design&t=cROV5EmwkxHZrcmJ-1"
-          target="_blank"
-          >abrir as telas no figma</a
-        >
+
+        <a href="https://www.figma.com/file/9PC03YiIAtag7VzBPSQG9w/search?type=design&node-id=0%3A1&mode=design&t=cROV5EmwkxHZrcmJ-1" target="_blank">
+          abrir as telas no figma
+        </a>
+        
         para inspecionar detalhes como cores e espaçamentos. a senha para abrir
         o arquivo no figma é <em>vision-status-signature-card</em>.
       </p>

@@ -1,19 +1,14 @@
 <template>
-  <div class="c-input">
-    <input
-      v-model="item"
-      class="c-input__input"
-      type="text"
-      name="search"
-      placeholder="Busque"
-    />
-    <button class="c-input__button" type="submit" @click="() => $emit('click')">
-      <img class="c-input__img" :src="searchIcon" />
+  <div class="input">
+    <input v-model="item" class="input__busca" type="text" name="search" placeholder="Buscar Produto"/>
+    <button class="botao__input" type="submit" @click="() => $emit('click')">
+      <img class="img__input" :src="searchIcon" />
     </button>
   </div>
 </template>
+
 <script>
-import searchIcon from "../assets/search-icon.svg";
+ import searchIcon from "../assets/search-icon.svg";
 
 export default {
   props: {
@@ -41,49 +36,50 @@ export default {
 </script>
 
 <style scoped>
-.c-input {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid var(--color-gray-2);
+.input {
   width: 240px;
   height: 42px;
+  display: flex;
   border-radius: 4px;
   top: 94px;
+  align-items: center;
   margin-top: 24px;
+  justify-content: space-between;
+  border: 1px solid var(--color-gray-2);
 }
 
-.c-input__input::placeholder {
-  font-family: "Proxima Nova";
-  font-weight: var(--font-weight-extra-bold);
-  color: var(--color-gray-3);
-}
-
-.c-input__input {
-  background-color: var(--color-white);
-  border: 0px;
-  outline: 0;
+.input__busca {
   margin-left: 12px;
-}
-
-.c-input__button {
-  border-color: var(--color-white);
-  background-color: var(--color-white);
+  outline: 0;
   border: 0px;
+  background-color: var(--color-white)!important;
 }
 
-.c-input__button :active {
-  opacity: 0.4;
+.input__busca::placeholder {
+  font-family: "Proxima Nova";
+  color: var(--color-gray-3);
+  font-weight: var(--font-weight-extra-bold);
 }
-
-.c-input__img {
+.img__input {
   width: 25px;
   height: 25px;
   display: flex;
 }
 
-@media (max-width: 699px) {
-  .c-input {
+.botao__input {
+  border: 0px;
+  border-color: var(--color-white);
+  background-color: var(--color-white);
+}
+
+.botao__input :active {
+  opacity: 0.8;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 700px) {
+  .input {
     width: 335px;
   }
 }

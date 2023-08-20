@@ -1,10 +1,11 @@
 <template>
-  <header class="c-header">
-      <img class="c-header__logo " :src="logo"/>
+  <header class="header">
+      <img class="logo__enjoei" :src="logo"/>
   </header>
 </template>
+
 <script>
-import logo from '../assets/enjoei-logo.svg'
+ import logo from '../assets/enjoei-logo.svg'
 
 export default {
   data() {
@@ -14,20 +15,21 @@ export default {
   }
 }
 </script>
+
 <style scoped>
-  .c-header {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--color-white);
-      border-bottom: 1px solid var(--color-gray-2);
+ .logo__enjoei {
+   width: 35px;
+   height: 35px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+  }
+  .header {
+   width: 100%;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 1px solid var(--color-gray-2);
+   background-color: var(--color-white);
   }
 
-  .c-header__logo {
-      width: 30px;
-      height: 30px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
 </style>

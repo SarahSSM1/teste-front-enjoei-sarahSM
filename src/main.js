@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './app.vue'
 import router from './roteador'
 import store from './loja'
-import pageTitle from '@/tools/page-title'
+import pageTitle from '@/tools/titulo'
 
 Vue.mixin(pageTitle)
 

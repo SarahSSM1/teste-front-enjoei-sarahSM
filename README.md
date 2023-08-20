@@ -11,7 +11,6 @@ Projeto feito por: Sarah Sanatana de Morais.
 ```
 yarn install
 ```
-
 ### Compiles and hot-reloads for development
 ```
 yarn serve
